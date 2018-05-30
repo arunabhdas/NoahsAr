@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		4BCBACD320BF03B9009B2759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCBACD220BF03B9009B2759 /* AppDelegate.swift */; };
 		4BCBACD520BF03B9009B2759 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BCBACD420BF03B9009B2759 /* art.scnassets */; };
-		4BCBACD720BF03B9009B2759 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCBACD620BF03B9009B2759 /* ViewController.swift */; };
+		4BCBACD720BF03B9009B2759 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCBACD620BF03B9009B2759 /* FirstViewController.swift */; };
 		4BCBACDA20BF03B9009B2759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BCBACD820BF03B9009B2759 /* Main.storyboard */; };
 		4BCBACDC20BF03BA009B2759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BCBACDB20BF03BA009B2759 /* Assets.xcassets */; };
 		4BCBACDF20BF03BA009B2759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BCBACDD20BF03BA009B2759 /* LaunchScreen.storyboard */; };
+		4BCBACE720BF0E38009B2759 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCBACE620BF0E38009B2759 /* InitialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4BCBACCF20BF03B9009B2759 /* NoahsAr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoahsAr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BCBACD220BF03B9009B2759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BCBACD420BF03B9009B2759 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		4BCBACD620BF03B9009B2759 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4BCBACD620BF03B9009B2759 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		4BCBACD920BF03B9009B2759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BCBACDB20BF03BA009B2759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BCBACDE20BF03BA009B2759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BCBACE020BF03BA009B2759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BCBACE620BF0E38009B2759 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				4BCBACD220BF03B9009B2759 /* AppDelegate.swift */,
 				4BCBACD420BF03B9009B2759 /* art.scnassets */,
-				4BCBACD620BF03B9009B2759 /* ViewController.swift */,
+				4BCBACD620BF03B9009B2759 /* FirstViewController.swift */,
 				4BCBACD820BF03B9009B2759 /* Main.storyboard */,
 				4BCBACDB20BF03BA009B2759 /* Assets.xcassets */,
 				4BCBACDD20BF03BA009B2759 /* LaunchScreen.storyboard */,
 				4BCBACE020BF03BA009B2759 /* Info.plist */,
+				4BCBACE620BF0E38009B2759 /* InitialViewController.swift */,
 			);
 			path = NoahsAr;
 			sourceTree = "<group>";
@@ -139,7 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BCBACD720BF03B9009B2759 /* ViewController.swift in Sources */,
+				4BCBACE720BF0E38009B2759 /* InitialViewController.swift in Sources */,
+				4BCBACD720BF03B9009B2759 /* FirstViewController.swift in Sources */,
 				4BCBACD320BF03B9009B2759 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
