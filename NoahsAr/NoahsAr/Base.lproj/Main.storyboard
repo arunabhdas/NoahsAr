@@ -71,7 +71,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Izb-Yf-vHl">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="701"/>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -79,7 +79,7 @@
                             <constraint firstItem="Izb-Yf-vHl" firstAttribute="leading" secondItem="lIi-38-xBS" secondAttribute="leading" id="7Od-bj-HaE"/>
                             <constraint firstItem="Izb-Yf-vHl" firstAttribute="top" secondItem="xTy-n7-B1P" secondAttribute="top" id="9V4-2O-rYU"/>
                             <constraint firstItem="Izb-Yf-vHl" firstAttribute="trailing" secondItem="lIi-38-xBS" secondAttribute="trailing" id="ArC-bl-SE7"/>
-                            <constraint firstItem="Izb-Yf-vHl" firstAttribute="bottom" secondItem="lIi-38-xBS" secondAttribute="bottom" id="Xtb-YM-RqJ"/>
+                            <constraint firstItem="Izb-Yf-vHl" firstAttribute="bottom" secondItem="lIi-38-xBS" secondAttribute="bottom" constant="34" id="Xtb-YM-RqJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lIi-38-xBS"/>
                     </view>
