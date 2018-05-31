@@ -23,12 +23,10 @@ class SecondViewController: UIViewController, ARSCNViewDelegate {
 		
 		// Show statistics such as fps and timing information
 		self.sceneView.showsStatistics = true
+	
 		
-		// Create a new scene
-		// let scene = SCNScene(named: "art.scnassets/hoop.scn")!
-		
-		// self.sceneView.scene = scene
-
+		addBackboard()
+		registerGestureRecognizer()
     }
 
 	func addBackboard() {
@@ -40,7 +38,60 @@ class SecondViewController: UIViewController, ARSCNViewDelegate {
 			return
 		}
 		
-		backboardNode.position = SCNVector3(x: 0, y: 0.0, z: 0.0)
+		backboardNode.position = SCNVector3(x: 0, y: -3.0, z: -3.0)
+		let physicsShape = SCNPhysicsShape(node: backboardNode, options: [SCNPhysicsShape.Option.type: SCNPhysicsShape.ShapeType.concavePolyhedron])
+		let physicsBody = SCNPhysicsBody(type: .static, shape: physicsShape)
+		backboardNode.physicsBody = physicsBody
+		
+		self.sceneView.scene.rootNode.addChildNode(backboardNode)
+	
+	}
+	func horizontalAction(node: SCNNode) {
+		
+	}
+	func registerGestureRecognizer() {
+		let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+		sceneView.addGestureRecognizer(tap)
+		
+	}
+	@objc func handleTap(gestureRecognizer: UIGestureRecognizer) {
+		// scene view to be accessed
+		guard let scnView = gestureRecognizer.view as? ARSCNView else {
+			return
+		}
+		
+		guard let centerPoint = scnView.pointOfView else {
+			return
+		}
+		// transform matrix
+		// the orientation
+		// the location of the camera
+		// orientation and location to determine the position of the camera and it's at this point in which we want the ball to be placed
+		
+		// access the point of view of the scene view ... the center point
+		let cameraTransform = centerPoint.transform
+		let cameraLocation = SCNVector3(x: cameraTransform.m41, y: cameraTransform.m42, z: cameraTransform.m43)
+		let cameraOrientation = SCNVector3(x: -cameraTransform.m31, y: -cameraTransform.m32, z: -cameraTransform.m33)
+		
+		let cameraPosition = SCNVector3Make(cameraLocation.x + cameraOrientation.x, cameraLocation.y + cameraOrientation.y, cameraLocation.z + cameraOrientation.z)
+		
+		let ball = SCNSphere(radius: 0.15)
+		let material = SCNMaterial()
+		material.diffuse.contents = UIImage(named: "basketballSkin")
+		ball.materials = [material]
+		
+		let ballNode = SCNNode(geometry: ball)
+		ballNode.position = cameraPosition
+		sceneView.scene.rootNode.addChildNode(ballNode)
+		
+		let physicsShape = SCNPhysicsShape(node: ballNode, options: nil)
+		let physicsBody = SCNPhysicsBody(type: .dynamic, shape: physicsShape)
+		
+		ballNode.physicsBody = physicsBody
+		let forceVector: Float = 6
+		ballNode.physicsBody?.applyForce(SCNVector3(x: cameraPosition.x * forceVector, y: cameraPosition.y * forceVector, z: cameraPosition.z * forceVector), asImpulse: true)
+		
+
 		
 	}
 	

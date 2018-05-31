@@ -19,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BB8C23220BFF25E009E4442 /* NoahsAr.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = NoahsAr.playground; path = "../../noahsar-resources/NoahsAr.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4BCBACCF20BF03B9009B2759 /* NoahsAr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoahsAr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BCBACD220BF03B9009B2759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BCBACD420BF03B9009B2759 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		4BCBACD120BF03B9009B2759 /* NoahsAr */ = {
 			isa = PBXGroup;
 			children = (
+				4BB8C23220BFF25E009E4442 /* NoahsAr.playground */,
 				4BCBACD220BF03B9009B2759 /* AppDelegate.swift */,
 				4BCBACD420BF03B9009B2759 /* art.scnassets */,
 				4BCBACD620BF03B9009B2759 /* FirstViewController.swift */,
