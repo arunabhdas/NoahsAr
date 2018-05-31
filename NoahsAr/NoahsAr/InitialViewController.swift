@@ -2,9 +2,6 @@
 //  InitialViewController.swift
 //  NoahsAr
 //
-//  Created by Das on 5/30/18.
-//  Copyright © 2018 arunabhdas. All rights reserved.
-//
 
 import UIKit
 

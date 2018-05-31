@@ -2,8 +2,6 @@
 //  ViewController.swift
 //  NoahsAr
 //
-//  Created by Das on 5/30/18.
-//  Copyright © 2018 arunabhdas. All rights reserved.
 //
 
 import UIKit
@@ -24,8 +22,39 @@ class FirstViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
-        
+        // let scene = SCNScene(named: "art.scnassets/ship.scn")!
+		let scene = SCNScene()
+		
+		// first
+		let firstCube = SCNBox(width: 0.2, height: 0.2, length: 0.2, chamferRadius: 0.05)
+		let firstCubeMaterial = SCNMaterial()
+		firstCubeMaterial.diffuse.contents = Constants.Colors.nicheDarkBlue
+		firstCube.materials = [firstCubeMaterial]
+		let firstCubeNode = SCNNode(geometry: firstCube)
+		firstCubeNode.position = SCNVector3(x: 0, y: 0.2, z: -1.0)
+		
+		
+		// second
+		let rectangle = SCNBox(width: 0.2, height: 0.2, length: 0.4, chamferRadius: 0.0)
+		let rectangleMaterial = SCNMaterial()
+		rectangleMaterial.diffuse.contents = Constants.Colors.nicheLightBlue
+		rectangle.materials = [rectangleMaterial]
+		let rectangleNode = SCNNode(geometry: rectangle)
+		rectangleNode.position = SCNVector3(x: 0, y: 0.5, z: -1.0)
+		
+		
+		let firstText = SCNText(string: "Das", extrusionDepth: 1)
+		let textMaterial = SCNMaterial()
+		textMaterial.diffuse.contents = Constants.Colors.classyPurple
+		firstText.materials = [textMaterial]
+		
+        let textNode = SCNNode(geometry: firstText)
+		textNode.position = SCNVector3(x: 0.0, y: -0.5, z: -1.0)
+		
+		scene.rootNode.addChildNode(firstCubeNode)
+		scene.rootNode.addChildNode(rectangleNode)
+		scene.rootNode.addChildNode(textNode)
+		
         // Set the scene to the view
         sceneView.scene = scene
     }
