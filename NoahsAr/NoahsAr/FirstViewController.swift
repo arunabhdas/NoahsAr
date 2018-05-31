@@ -47,9 +47,9 @@ class FirstViewController: UIViewController, ARSCNViewDelegate {
 		let textMaterial = SCNMaterial()
 		textMaterial.diffuse.contents = Constants.Colors.classyPurple
 		firstText.materials = [textMaterial]
-		
         let textNode = SCNNode(geometry: firstText)
-		textNode.position = SCNVector3(x: 0.0, y: -0.5, z: -1.0)
+		textNode.position = SCNVector3(x: 0.0, y: 0.0, z: -1.0)
+		textNode.scale = SCNVector3(x: 0.1, y: 0.1, z: 0.1)
 		
 		scene.rootNode.addChildNode(firstCubeNode)
 		scene.rootNode.addChildNode(rectangleNode)
