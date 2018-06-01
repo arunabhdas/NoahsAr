@@ -38,15 +38,37 @@ class SecondViewController: UIViewController, ARSCNViewDelegate {
 			return
 		}
 		
-		backboardNode.position = SCNVector3(x: 0, y: -3.0, z: -3.0)
+		backboardNode.position = SCNVector3(x: 0, y: -2.0, z: -3.0)
 		let physicsShape = SCNPhysicsShape(node: backboardNode, options: [SCNPhysicsShape.Option.type: SCNPhysicsShape.ShapeType.concavePolyhedron])
 		let physicsBody = SCNPhysicsBody(type: .static, shape: physicsShape)
 		backboardNode.physicsBody = physicsBody
 		
 		self.sceneView.scene.rootNode.addChildNode(backboardNode)
+		
+		roundAction(node: backboardNode)
 	
 	}
 	func horizontalAction(node: SCNNode) {
+		let leftAction = SCNAction.move(by: SCNVector3(x: -1, y: 0, z: 0), duration: 3)
+		let rightAction = SCNAction.move(by: SCNVector3(x: 1, y: 0, z: 0), duration: 3)
+		
+		let actionSequence = SCNAction.sequence([leftAction, rightAction])
+		
+		node.runAction(SCNAction.repeat(actionSequence, count: 2))
+	}
+	
+	// /\
+	// \/
+	func roundAction(node: SCNNode) {
+		let upLeft = SCNAction.move(by: SCNVector3(x: 1, y: 1, z: 0), duration: 2)
+		let downRight = SCNAction.move(by: SCNVector3(x: 1, y: -1, z: 0), duration: 2)
+		let downLeft = SCNAction.move(by: SCNVector3(x: -1, y: -1, z: 0), duration: 2)
+		let upRight = SCNAction.move(by: SCNVector3(x: -1, y: 1, z: 0), duration: 2)
+		
+		let actionSequence = SCNAction.sequence([upLeft, downRight, downLeft, upRight])
+		node.runAction(SCNAction.repeat(actionSequence, count: 2))
+		
+		
 		
 	}
 	func registerGestureRecognizer() {
