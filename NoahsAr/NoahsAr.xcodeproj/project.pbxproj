@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B6AB40520C130000059D94B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6AB40420C130000059D94B /* CustomButton.swift */; };
 		4BCBACD320BF03B9009B2759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCBACD220BF03B9009B2759 /* AppDelegate.swift */; };
 		4BCBACD520BF03B9009B2759 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BCBACD420BF03B9009B2759 /* art.scnassets */; };
 		4BCBACD720BF03B9009B2759 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCBACD620BF03B9009B2759 /* FirstViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B6AB40420C130000059D94B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		4BB8C23220BFF25E009E4442 /* NoahsAr.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = NoahsAr.playground; path = "../../noahsar-resources/NoahsAr.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4BCBACCF20BF03B9009B2759 /* NoahsAr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoahsAr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BCBACD220BF03B9009B2759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B6AB40620C131AC0059D94B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B6AB40420C130000059D94B /* CustomButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4BCBACC620BF03B9009B2759 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +84,7 @@
 				4BCBACE020BF03BA009B2759 /* Info.plist */,
 				4BCBACE620BF0E38009B2759 /* InitialViewController.swift */,
 				4BCBACFE20BFD356009B2759 /* Model */,
+				4B6AB40620C131AC0059D94B /* View */,
 			);
 			path = NoahsAr;
 			sourceTree = "<group>";
@@ -160,6 +171,7 @@
 			files = (
 				4BCBACE720BF0E38009B2759 /* InitialViewController.swift in Sources */,
 				4BCBACD720BF03B9009B2759 /* FirstViewController.swift in Sources */,
+				4B6AB40520C130000059D94B /* CustomButton.swift in Sources */,
 				4BCBACD320BF03B9009B2759 /* AppDelegate.swift in Sources */,
 				4BCBAD0020BFD8C8009B2759 /* SecondViewController.swift in Sources */,
 				4BCBACFD20BFD352009B2759 /* Constants.swift in Sources */,
