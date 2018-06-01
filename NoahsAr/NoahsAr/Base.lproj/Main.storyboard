@@ -176,6 +176,7 @@
                         <viewLayoutGuide key="safeArea" id="lIi-38-xBS"/>
                     </view>
                     <connections>
+                        <outlet property="addHoopButton" destination="OXb-3S-MSs" id="JWs-46-p0l"/>
                         <outlet property="sceneView" destination="Izb-Yf-vHl" id="wgE-KJ-HXY"/>
                     </connections>
                 </viewController>

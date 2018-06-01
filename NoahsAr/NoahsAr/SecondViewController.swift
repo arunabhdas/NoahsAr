@@ -12,6 +12,7 @@ import ARKit
 
 class SecondViewController: UIViewController, ARSCNViewDelegate {
 	@IBOutlet weak var sceneView: ARSCNView!
+	@IBOutlet weak var addHoopButton: UIButton!
 	var currentNode: SCNNode!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +26,7 @@ class SecondViewController: UIViewController, ARSCNViewDelegate {
 		self.sceneView.showsStatistics = true
 	
 		
-		addBackboard()
+		// addBackboard()
 		registerGestureRecognizer()
     }
 
@@ -83,7 +84,8 @@ class SecondViewController: UIViewController, ARSCNViewDelegate {
 		horizontalAction(node: currentNode)
 	}
 	@IBAction func addHoop(_ sender: Any) {
-		
+		addBackboard()
+		self.addHoopButton.isHidden = true
 	}
 	
 	func registerGestureRecognizer() {
