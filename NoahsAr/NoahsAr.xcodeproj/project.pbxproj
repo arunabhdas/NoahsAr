@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B6AB40520C130000059D94B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6AB40420C130000059D94B /* CustomButton.swift */; };
+		4B6AB40920C13F740059D94B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6AB40820C13F740059D94B /* ThirdViewController.swift */; };
 		4BCBACD320BF03B9009B2759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCBACD220BF03B9009B2759 /* AppDelegate.swift */; };
 		4BCBACD520BF03B9009B2759 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BCBACD420BF03B9009B2759 /* art.scnassets */; };
 		4BCBACD720BF03B9009B2759 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCBACD620BF03B9009B2759 /* FirstViewController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		4B6AB40420C130000059D94B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		4B6AB40820C13F740059D94B /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		4BB8C23220BFF25E009E4442 /* NoahsAr.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = NoahsAr.playground; path = "../../noahsar-resources/NoahsAr.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4BCBACCF20BF03B9009B2759 /* NoahsAr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoahsAr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BCBACD220BF03B9009B2759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		4B6AB40720C13F5B0059D94B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4BCBACD620BF03B9009B2759 /* FirstViewController.swift */,
+				4BCBACFF20BFD8C8009B2759 /* SecondViewController.swift */,
+				4B6AB40820C13F740059D94B /* ThirdViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		4BCBACC620BF03B9009B2759 = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +88,7 @@
 				4BB8C23220BFF25E009E4442 /* NoahsAr.playground */,
 				4BCBACD220BF03B9009B2759 /* AppDelegate.swift */,
 				4BCBACD420BF03B9009B2759 /* art.scnassets */,
-				4BCBACD620BF03B9009B2759 /* FirstViewController.swift */,
-				4BCBACFF20BFD8C8009B2759 /* SecondViewController.swift */,
+				4B6AB40720C13F5B0059D94B /* Controller */,
 				4BCBACD820BF03B9009B2759 /* Main.storyboard */,
 				4BCBACDB20BF03BA009B2759 /* Assets.xcassets */,
 				4BCBACDD20BF03BA009B2759 /* LaunchScreen.storyboard */,
@@ -172,6 +183,7 @@
 				4BCBACE720BF0E38009B2759 /* InitialViewController.swift in Sources */,
 				4BCBACD720BF03B9009B2759 /* FirstViewController.swift in Sources */,
 				4B6AB40520C130000059D94B /* CustomButton.swift in Sources */,
+				4B6AB40920C13F740059D94B /* ThirdViewController.swift in Sources */,
 				4BCBACD320BF03B9009B2759 /* AppDelegate.swift in Sources */,
 				4BCBAD0020BFD8C8009B2759 /* SecondViewController.swift in Sources */,
 				4BCBACFD20BFD352009B2759 /* Constants.swift in Sources */,
