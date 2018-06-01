@@ -1,0 +1,266 @@
+[
+  {
+    "layers" : [
+      {
+        "file" : "backgrounds\/$image.jpg",
+        "frame" : "{{0, 0}, {750, 1334}}",
+        "title" : "background",
+        "type" : "background"
+      },
+      {
+        "file" : "device_frames\/iPhone-8-Silver.png",
+        "frame" : "{{-95, -304}, {940, 1637}}",
+        "title" : "device",
+        "type" : "device"
+      },
+      {
+        "file" : "$language\/iPhone 8-$image.png",
+        "frame" : "{{86, 0}, {578, 1027}}",
+        "title" : "content",
+        "type" : "content"
+      },
+      {
+        "file" : "$language\/screenshots.strings",
+        "font" : "",
+        "fontSize" : 45,
+        "frame" : "{{0, 1225}, {750, 70}}",
+        "title" : "text",
+        "type" : "text"
+      }
+    ],
+    "outputConfig" : {
+      "fromImageNumber" : 1,
+      "output" : "Export\/$language\/iPhone 8-$image.png",
+      "toImageNumber" : 5
+    },
+    "title" : "iPhone 8"
+  },
+  {
+    "layers" : [
+      {
+        "file" : "backgrounds\/$image.jpg",
+        "frame" : "{{0, 0}, {750, 1334}}",
+        "title" : "background",
+        "type" : "background"
+      },
+      {
+        "file" : "device_frames\/iPhone-8-Silver.png",
+        "frame" : "{{-95, -304}, {940, 1637}}",
+        "title" : "device",
+        "type" : "device"
+      },
+      {
+        "file" : "$language\/iPhone 8-$image.png",
+        "frame" : "{{86, 0}, {578, 1027}}",
+        "title" : "content",
+        "type" : "content"
+      },
+      {
+        "file" : "$language\/screenshots.strings",
+        "font" : "",
+        "fontSize" : 45,
+        "frame" : "{{0, 1225}, {750, 70}}",
+        "title" : "text",
+        "type" : "text"
+      }
+    ],
+    "outputConfig" : {
+      "fromImageNumber" : 1,
+      "output" : "Export\/$language\/iPhone 8-$image.png",
+      "toImageNumber" : 5
+    },
+    "title" : "Updating File"
+  },
+  {
+    "layers" : [
+      {
+        "file" : "backgrounds\/$image.jpg",
+        "frame" : "{{0, 0}, {750, 1334}}",
+        "title" : "background",
+        "type" : "background"
+      },
+      {
+        "file" : "device_frames\/iPhone-8-Silver.png",
+        "frame" : "{{-95, -304}, {940, 1637}}",
+        "title" : "device",
+        "type" : "device"
+      },
+      {
+        "file" : "$language\/iPhone 8-$image.png",
+        "frame" : "{{86, 0}, {578, 1027}}",
+        "title" : "content",
+        "type" : "content"
+      },
+      {
+        "file" : "$language\/screenshots.strings",
+        "font" : "",
+        "fontSize" : 45,
+        "frame" : "{{0, 1225}, {750, 70}}",
+        "title" : "text",
+        "type" : "text"
+      }
+    ],
+    "outputConfig" : {
+      "fromImageNumber" : 1,
+      "output" : "Export\/$language\/iPhone 8-$image.png",
+      "toImageNumber" : 5
+    },
+    "title" : "Updating File"
+  },
+  {
+    "layers" : [
+      {
+        "file" : "backgrounds\/$image.jpg",
+        "frame" : "{{0, 0}, {750, 1334}}",
+        "title" : "background",
+        "type" : "background"
+      },
+      {
+        "file" : "device_frames\/iPhone-8-Silver.png",
+        "frame" : "{{-95, -304}, {940, 1637}}",
+        "title" : "device",
+        "type" : "device"
+      },
+      {
+        "file" : "$language\/iPhone 8-$image.png",
+        "frame" : "{{86, 0}, {578, 1027}}",
+        "title" : "content",
+        "type" : "content"
+      },
+      {
+        "file" : "",
+        "font" : "",
+        "fontSize" : 45,
+        "frame" : "{{0, 1225}, {750, 70}}",
+        "title" : "text",
+        "type" : "text"
+      }
+    ],
+    "outputConfig" : {
+      "fromImageNumber" : 1,
+      "output" : "Export\/$language\/iPhone 8-$image.png",
+      "toImageNumber" : 5
+    },
+    "title" : "Updating File"
+  },
+  {
+    "layers" : [
+      {
+        "file" : "backgrounds\/$image.jpg",
+        "frame" : "{{0, 0}, {750, 1334}}",
+        "title" : "background",
+        "type" : "background"
+      },
+      {
+        "file" : "device_frames\/iPhone-8-Silver.png",
+        "frame" : "{{-95, -304}, {940, 1637}}",
+        "title" : "device",
+        "type" : "device"
+      },
+      {
+        "file" : "$language\/iPhone 8-$image.png",
+        "frame" : "{{86, 0}, {578, 1027}}",
+        "title" : "content",
+        "type" : "content"
+      },
+      {
+        "file" : "",
+        "font" : "",
+        "fontSize" : 45,
+        "frame" : "{{0, 1225}, {750, 70}}",
+        "title" : "text",
+        "type" : "text"
+      }
+    ],
+    "outputConfig" : {
+      "fromImageNumber" : 1,
+      "output" : "Export\/$language\/iPhone 8-$image.png",
+      "toImageNumber" : 5
+    },
+    "title" : "Updating File"
+  },
+  {
+    "layers" : [
+      {
+        "file" : "backgrounds\/$image.jpg",
+        "frame" : "{{0, 0}, {750, 1334}}",
+        "title" : "background",
+        "type" : "background"
+      },
+      {
+        "file" : "device_frames\/iPhone-8-Silver.png",
+        "frame" : "{{-95, -304}, {940, 1637}}",
+        "title" : "device",
+        "type" : "device"
+      },
+      {
+        "file" : "$language\/iPhone 8-$image.png",
+        "frame" : "{{86, 0}, {578, 1027}}",
+        "title" : "content",
+        "type" : "content"
+      }
+    ],
+    "outputConfig" : {
+      "fromImageNumber" : 1,
+      "output" : "Export\/$language\/iPhone 8-$image.png",
+      "toImageNumber" : 5
+    },
+    "title" : "Remove text"
+  },
+  {
+    "layers" : [
+      {
+        "file" : "backgrounds\/$image.jpg",
+        "frame" : "{{0, 0}, {750, 1334}}",
+        "title" : "background",
+        "type" : "background"
+      },
+      {
+        "file" : "device_frames\/iPhone-8-Silver.png",
+        "frame" : "{{-95, -304}, {940, 1637}}",
+        "title" : "device",
+        "type" : "device"
+      },
+      {
+        "file" : "$language\/iPhone 8-$image.png",
+        "frame" : "{{86, 0}, {578, 1027}}",
+        "title" : "content",
+        "type" : "content"
+      }
+    ],
+    "outputConfig" : {
+      "fromImageNumber" : 1,
+      "output" : "Export\/$language\/iPhone 8-$image.png",
+      "toImageNumber" : 5
+    },
+    "title" : "Updating Title"
+  },
+  {
+    "layers" : [
+      {
+        "file" : "backgrounds\/$image.jpg",
+        "frame" : "{{0, 0}, {750, 1334}}",
+        "title" : "background",
+        "type" : "background"
+      },
+      {
+        "file" : "device_frames\/iPhone-8-Silver.png",
+        "frame" : "{{-95, -304}, {940, 1637}}",
+        "title" : "device",
+        "type" : "device"
+      },
+      {
+        "file" : "$language\/iPhone 8-$image.png",
+        "frame" : "{{86, 0}, {578, 1027}}",
+        "title" : "content",
+        "type" : "content"
+      }
+    ],
+    "outputConfig" : {
+      "fromImageNumber" : 1,
+      "output" : "Export\/$language\/iPhone 8-$image.png",
+      "toImageNumber" : 5
+    },
+    "title" : "Updating File"
+  }
+]

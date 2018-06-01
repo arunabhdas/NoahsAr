@@ -1,0 +1,30 @@
+[
+  {
+    "layers" : [
+
+    ],
+    "outputConfig" : {
+      "fromImageNumber" : 1,
+      "output" : "",
+      "toImageNumber" : 5
+    },
+    "title" : "Initial Operation"
+  },
+  {
+    "layers" : [
+      {
+        "file" : "",
+        "frame" : "{{0, 0}, {800, 1200}}",
+        "rotation" : 0,
+        "title" : "background",
+        "type" : "background"
+      }
+    ],
+    "outputConfig" : {
+      "fromImageNumber" : 1,
+      "output" : "",
+      "toImageNumber" : 5
+    },
+    "title" : "Add background"
+  }
+]
