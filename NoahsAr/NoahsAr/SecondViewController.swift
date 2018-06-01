@@ -12,7 +12,7 @@ import ARKit
 
 class SecondViewController: UIViewController, ARSCNViewDelegate {
 	@IBOutlet weak var sceneView: ARSCNView!
-	
+	var currentNode: SCNNode!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,8 +44,8 @@ class SecondViewController: UIViewController, ARSCNViewDelegate {
 		backboardNode.physicsBody = physicsBody
 		
 		self.sceneView.scene.rootNode.addChildNode(backboardNode)
+		self.currentNode = backboardNode
 		
-		roundAction(node: backboardNode)
 	
 	}
 	func horizontalAction(node: SCNNode) {
@@ -71,6 +71,21 @@ class SecondViewController: UIViewController, ARSCNViewDelegate {
 		
 		
 	}
+	@IBAction func startRoundAction(_ sender: Any) {
+		roundAction(node: currentNode)
+	}
+	
+	@IBAction func stopAllActions(_ sender: Any) {
+		currentNode.removeAllActions()
+	}
+	
+	@IBAction func startHorizontalAction(_ sender: Any) {
+		horizontalAction(node: currentNode)
+	}
+	@IBAction func addHoop(_ sender: Any) {
+		
+	}
+	
 	func registerGestureRecognizer() {
 		let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
 		sceneView.addGestureRecognizer(tap)
@@ -111,7 +126,7 @@ class SecondViewController: UIViewController, ARSCNViewDelegate {
 		
 		ballNode.physicsBody = physicsBody
 		let forceVector: Float = 6
-		ballNode.physicsBody?.applyForce(SCNVector3(x: cameraPosition.x * forceVector, y: cameraPosition.y * forceVector, z: cameraPosition.z * forceVector), asImpulse: true)
+		ballNode.physicsBody?.applyForce(SCNVector3(x: cameraPosition.x * forceVector, y: cameraPosition.y  * forceVector, z: cameraPosition.z * forceVector), asImpulse: true)
 		
 
 		
